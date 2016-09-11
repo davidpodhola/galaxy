@@ -1,0 +1,28 @@
+{
+  "name": "galaxy",
+  "version": "0.0.1",
+  "description": "Electron + React app for manage Solr",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thereactleague/galaxy.git"
+  },
+  "keywords": [
+    "Solr",
+    "Electron",
+    "React",
+    "Admin"
+  ],
+  "author": "thereactleague",
+  "contributors": [
+    "yriveiro"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thereactleague/galaxy/issues"
+  },
+  "homepage": "https://github.com/thereactleague/galaxy#readme"
+}
