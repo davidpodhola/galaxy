@@ -16,10 +16,14 @@ const config = {
 				loaders: ['style', 'css?modules', 'postcss', 'sass']
 			},
 			{
-				test: /\.js$/,
-				exclude: /node_modules/,
-				loaders: ['babel']
-			},
+			          test: /\.js$/,
+			          exclude: /node_modules/,
+			          loader: "babel-loader",
+			          query: {
+			            presets: ['es2015' ],
+			            plugins: ['transform-runtime']
+			          }
+							},
 			{
 				test: /\.html$/,
 				loaders: ['html']
