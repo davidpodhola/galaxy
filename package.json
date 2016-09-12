@@ -4,8 +4,8 @@
   "description": "Electron + React app for managing Solr",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
-    "dist": "echo \"Error: no production webpack config. Pester fbielejec to make one.\" && exit 1"
+    "start": "electron .",
+    "dist": "echo \"Error: no production webpack config. Pester fbielejec to make one.\" && exit 1",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
