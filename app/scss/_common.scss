@@ -1,0 +1,17 @@
+.position-relative {
+  position: relative;
+}
+
+.full-box {
+  width: 100%;
+  height: 100%;
+}
+
+.centered-container {
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
