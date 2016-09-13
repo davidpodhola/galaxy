@@ -11,8 +11,8 @@ const config = Object.create(baseConfig)
 
 // Set entry points
 config.entry = [
-    'webpack-hot-middleware/client?path=http://localhost:4000/__webpack_hmr&reload=true',
-    path.join(__dirname, '/app/index.js')
+  'webpack-hot-middleware/client?path=http://localhost:4000/__webpack_hmr&reload=true',
+  path.join(__dirname, '/app/index.js')
 ]
 
 // Set output
@@ -23,14 +23,14 @@ config.devtool = 'source-map'
 
 // ES lint
 config.eslint = {
-  parser: 'babel-eslint'
+ parser: 'babel-eslint'
 }
 
 // Dev plugins
 config.plugins.push(
-   new webpack.optimize.OccurenceOrderPlugin(),
-   new webpack.HotModuleReplacementPlugin(),
-   new webpack.NoErrorsPlugin()
+  new webpack.optimize.OccurenceOrderPlugin(),
+  new webpack.HotModuleReplacementPlugin(),
+  new webpack.NoErrorsPlugin()
 )
 
 // Specify Electron renderer
