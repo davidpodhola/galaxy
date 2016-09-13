@@ -23,10 +23,11 @@ $ npm start
 
 ## Directory Structure
 
-- Your client HTML lives in app/.
 - Your client javascript lives in app/js/.
+  - stateless functional components live in app/js/components 
+  - containers for managing state live in app/js/containers 
 - Your client SCSS lives in app/scss.
-- Your electron server code lives in src/.
+- Your electron server code lives in root.
 
 ### Building
 
