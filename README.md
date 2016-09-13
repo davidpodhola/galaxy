@@ -18,7 +18,7 @@ $ cd your-project-name && npm install
 ### Run
 
 ```bash
-$ gulp serve
+$ npm start
 ```
 
 ## Directory Structure

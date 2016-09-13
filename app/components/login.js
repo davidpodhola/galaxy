@@ -8,9 +8,6 @@ import LinearProgress from 'material-ui/LinearProgress';
 import ping from 'node-http-ping';
 import { isURL, toInt } from 'validator';
 
-import injectTapEventPlugin from 'react-tap-event-plugin';
-injectTapEventPlugin();
-
 const DEFAULT_HOST = 'localhost:8983';
 const TEXT_FIELD_LABEL = 'Solr hosts [Ex: localhost:8983; localhost:8984]';
 
@@ -50,7 +47,11 @@ class LoginComponent extends Component {
 
     this.setState(state);
 
-    this._connect();
+   console.log("click");
+   this.props.router.push('/home')
+
+// @fbielejc: this throws exceptions at me, commenting out for now
+    // this._connect();
   }
 
   _connect() {
