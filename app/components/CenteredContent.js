@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class CenteredContentComponent extends Component {
+class CenteredContent extends Component {
   render() {
     return (
       <div className={`centered-container ${this.props.className}`}>
@@ -11,3 +11,5 @@ export default class CenteredContentComponent extends Component {
     );
   }
 }
+
+export default CenteredContent
