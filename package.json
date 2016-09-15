@@ -6,7 +6,8 @@
   "scripts": {
     "start": "electron .",
     "dist": "webpack -p",
-    "test": "mocha --compilers js:babel-core/register,css:test/css-null-compiler.js --recursive --reporter nyan test/*.js"
+    "test": "mocha --compilers js:babel-core/register,css:test/css-null-compiler.js --recursive --reporter nyan test/*.js",
+    "coverage": "istanbul cover _mocha"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,8 @@
   ],
   "author": "thereactleague",
   "contributors": [
-    "yriveiro"
+    "yriveiro",
+    "fbielejec"
   ],
   "license": "MIT",
   "bugs": {
