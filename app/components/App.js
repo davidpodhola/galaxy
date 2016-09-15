@@ -16,7 +16,7 @@ const muiTheme = getMuiTheme({
   }
 });
 
-export default class App extends Component {
+class App extends Component {
   render() {
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
@@ -25,3 +25,5 @@ export default class App extends Component {
     );
   }
 }
+
+export default App
