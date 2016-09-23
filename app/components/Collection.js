@@ -1,12 +1,18 @@
 import React, {PropTypes, Component} from 'react'
 import Paper from 'material-ui/Paper';
+import RaisedButton from 'material-ui/RaisedButton';
 
-const style = {
-  height: 120,
-  width: 200,
-  margin: 20,
-  textAlign: 'center',
-  display: 'inline-block',
+const styles = {
+    paper: {
+        height: 120,
+        width: 200,
+        margin: 20,
+        textAlign: 'center',
+        display: 'inline-block'
+    },
+    button: {
+        // margin: 12
+    }
 };
 
 class Collection extends Component {
@@ -18,9 +24,16 @@ class Collection extends Component {
 
     render() {
         return (
-             <Paper style={style} zDepth={2}>
+             <Paper style={styles.paper} zDepth={2}>
                 <h1> {this.props.name} </h1>
                 <h2> {this.props.info} </h2>
+
+                    <RaisedButton
+                          label="Delete"
+                          labelPosition="before"
+                          style={styles.button}
+                        />
+
             </Paper>
         )
     }
