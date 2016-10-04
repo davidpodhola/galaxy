@@ -15,6 +15,11 @@ And then install dependencies.
 $ cd your-project-name && npm install
 ```
 
+If `npm install` [fails](https://github.com/thereactleague/galaxy/issues/11), 
+```bash
+$ cd node_modules/electron-prebuilt && node install.js
+```
+
 ### Run
 
 ```bash
