@@ -40,6 +40,8 @@ class CollectionsContainer extends Component {
         this.state = {
             collections : []
         }
+
+        this.handleClick = this.handleClick.bind(this)
     }
 
     componentWillMount() {
@@ -50,9 +52,21 @@ class CollectionsContainer extends Component {
         );
     }
 
+    handleClick(e) {
+        e.preventDefault()
+        var self = this;
+        this.state.collections.push( { name: "mock7", info: "more info" });
+        this.setState(
+          Object.assign(self.state, { collections: this.state.collections } )
+        );        
+    }    
+
     render() {
         return (
-            <Collections collections={this.state.collections}/>
+            <div>
+                <Collections collections={this.state.collections}/>
+                <button onClick={this.handleClick} className="btn btn-primary">Add</button>
+            </div>
         );
     }
 
